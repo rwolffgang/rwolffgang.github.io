@@ -1,0 +1,476 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Panhelios</title>
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="shortcut icon" href="http://www.panhelios.de/favicon.ico">
+
+		<!-- jQuery -->
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+		<!-- FancyBox -->
+        <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+
+		<!-- unslider -->
+		<script src="js/unslider/js/unslider-min.js"></script>
+		<link rel="stylesheet" href="js/unslider/css/unslider.css">
+    	<link rel="stylesheet" href="js/unslider/css/unslider-dots.css" />
+
+		<link rel="stylesheet" href="css/main.css" />
+    	<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="fonts/fonts.css" />
+
+	    <script>
+			var fancyboxOptions = {
+					maxWidth	: 800,
+					maxHeight	: 600,
+					fitToView	: false,
+					width		: '830',
+					height		: '100%',
+					autoSize	: false,
+					closeClick	: false,
+					openEffect	: 'none',
+					closeEffect	: 'none'
+				};
+	    </script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="about">
+				<div id="portrait"></div>
+				<div id="name">Robert Wolffgang</div>
+				<div id="position">Entrepreneur</div>
+				<div id="flavor">
+					<p>I founded Panhelios in 2010 and brought a software development kit for games onto the market in 2012.</p>
+					<p>Since then I have launched four social games in cooperation with international partners.</p>
+					<p>Until I handed over the company in 2017 over seven million players have been enjoying a game under the Panhelios flag.</p>
+				</div>
+				<div id="contact">
+					<ul>
+						<li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:robert@panhelios.de">robert@panhelios.de</a>
+
+						<li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+492515908512">+49 251 5908512</a>
+
+						<li><i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/rwolffgang">rwolffgang</a>
+					</ul>
+				</div>
+
+				<div id="imprint">
+					<div onclick="$.fancybox('#impressum-details', fancyboxOptions); return false;">Impressum</div>
+				</div>
+			</div>
+
+			<div id="timeline-container">
+				<!--<div id="title"><img src="assets/logo.png" /></div>-->
+
+				<div id="timeline">
+					<div id="bar"></div>
+					<div id="begin"></div>
+					<div id="end"></div>
+
+					<div id="moon"></div>
+					<div id="earth"></div>
+
+					<div id="landed" class="timeline-story right text-only">
+						<div class="dot" style="background-color: #464042"></div>
+						<div class="logo"><img src="assets/Panhelios-logo.png"></div>
+						<div class="year">2017</div>
+						<div class="title" style="color: #464042">A Journey's End</div>
+						<div class="description">After five adventurous years Panhelios has achieved its goal: to discover the full scope of game development - from prototyping first designs to delivering profitable games to millions of players.</div>
+					</div>
+
+					<div id="skyward-tale-se" class="timeline-story left" onclick="$.fancybox('#skyward-tale-se-details', fancyboxOptions); return false;">
+						<div class="dot" style="background-color: #ca144b"></div>
+						<div class="logo"><img src="assets/Skyward-Tale-SE-logo.png"></div>
+						<div class="year">2016</div>
+						<div class="title" style="color: #ca144b">Skyward Tale: SE</div>
+						<div class="description">Continue your adventures with Skyward and Hugo to even stranger places! This edition features a modern game engine for a more vivid experience.<br />
+						<span class="legacy">A legacy version of this game is available here.</span></div>
+					</div>
+
+					<div id="mission-snapshot" class="timeline-story right" onclick="$.fancybox('#mission-snapshot-details', fancyboxOptions); return false;">
+						<div class="dot" style="background-color: #65afcb"></div>
+						<div class="logo"><img src="assets/Mission-Snapshot-logo.png"></div>
+						<div class="year">2015</div>
+						<div class="title" style="color: #65afcb">Mission: Snapshot</div>
+						<div class="description">Travel to the most beautiful world's destinations and take breathtaking photos by solving unique puzzles.</div>
+					</div>
+
+					<div id="skyward-tale" class="timeline-story left" onclick="$.fancybox('#skyward-tale-details', fancyboxOptions); return false;">
+						<div class="dot" style="background-color: #c1260c"></div>
+						<div class="logo"><img src="assets/Skyward-Tale-logo.png"></div>
+						<div class="year">2014</div>
+						<div class="title" style="color: #c1260c">Skyward Tale</div>
+						<div class="description">Join Skyward and Hugo in their dream adventures and Match'n'Pop balloons to help them solve dazzling puzzles.</div>
+					</div>
+
+					<div id="cook-hero" class="timeline-story right" onclick="$.fancybox('#cook-hero-details', fancyboxOptions); return false;">
+						<div class="dot" style="background-color: #da9d2e"></div>
+						<div class="logo"><img src="assets/Cook-Hero-logo.png"></div>
+						<div class="year">2013</div>
+						<div class="title" style="color: #da9d2e">Cook Hero</div>
+						<div class="description">Solve puzzles to become the world's most renown chef and unlock real recipes for your collection.</div>
+					</div>
+
+					<div id="panhelios_sdk" class="timeline-story left" onclick="$.fancybox('#panhelios-sdk-details', fancyboxOptions); return false;">
+						<div class="dot" style="background-color: #464042"></div>
+						<div class="logo"><img src="assets/Panhelios-SDK-logo.png"></div>
+						<div class="year">2012</div>
+						<div class="title" style="color: #464042">Panhelios SDK</div>
+						<div class="description">With our professional Panhelios SDK developing online games became achievable for small start-ups.</div>
+					</div>
+				</div>
+			</div>
+
+		<div id="skyward-tale-se-details" class="details">
+			<div class="gallery">
+	            <ul>
+	                <li><img src="assets/skyward-tale-se/1.jpg" /></li>
+	                <li><img src="assets/skyward-tale-se/2.jpg" /></li>
+	                <li><img src="assets/skyward-tale-se/3.jpg" /></li>
+	                <li><img src="assets/skyward-tale-se/4.jpg" /></li>
+	                <li><img src="assets/skyward-tale-se/5.jpg" /></li>
+	            </ul>
+			</div>
+
+			<div class="logo">
+				<img src="assets/Skyward-Tale-SE-logo.png">
+			</div>
+
+			<div class="title">
+				Skyward Tale: Second Edition
+			</div>
+
+			<div class="platform">
+				Platform<br />
+				<img src="assets/logos/facebook.png" width="60" alt="Facebook" />
+			</div>
+
+			<div class="frontend">
+				Frontend<br />
+				<img src="assets/logos/adobe-air.jpg" width="60" alt="Adobe Air &amp; Flash" />
+			</div>
+
+			<div class="backend">
+				Backend<br />
+				<img src="assets/logos/Panhelios-SDK.png" width="60" alt="Panhelios SDK" />
+			</div>
+
+			<div class="launch">
+				Launch<br />
+				<span class="year">2016</span>
+			</div>
+
+			<div class="description">
+				<h1>About the Game</h1>
+
+				Skyward's adventure continues in Skyward Tale: Second Edition. Our hero travels to even stranger places, always in company with his trusty friend Hugo.
+
+				<ul>
+					<li>Over 300 hand-crafted levels!
+					<li>Play with your friends and ask them to solve a level for you.
+					<li>Earn stars by solving levels or helping your friends and get yourself some powerful boosters!
+				</ul>
+
+				Or simply have unforgettable Match'n'Pop fun!
+
+				<h1>Credits</h1>
+
+				Robert Wolffgang, Lead Developer<br />
+				Nino Rajacic, Game Designer<br />
+				Maria Keller, Graphics Artist<br />
+				Dragos Lengyel, Developer<br />
+				Gryffin Frank, Voice of Skyward
+			</div>
+		</div>
+
+		<div id="mission-snapshot-details" class="details">
+			<div class="gallery">
+	            <ul>
+	                <li><img src="assets/mission-snapshot/1.jpg" /></li>
+	                <li><img src="assets/mission-snapshot/2.jpg" /></li>
+	                <li><img src="assets/mission-snapshot/3.jpg" /></li>
+	                <li><img src="assets/mission-snapshot/4.jpg" /></li>
+	                <li><img src="assets/mission-snapshot/5.jpg" /></li>
+	            </ul>
+			</div>
+
+			<div class="logo">
+				<img src="assets/Mission-Snapshot-logo.png">
+			</div>
+
+			<div class="title">
+				Mission: Snapshot
+			</div>
+
+			<div class="platform">
+				Platform<br />
+				<img src="assets/logos/facebook.png" width="60" alt="Facebook" />
+			</div>
+
+			<div class="frontend">
+				Frontend<br />
+				<img src="assets/logos/adobe-air.jpg" width="60" alt="Adobe Air &amp; Flash" />
+			</div>
+
+			<div class="backend">
+				Backend<br />
+				<img src="assets/logos/Panhelios-SDK.png" width="60" alt="Panhelios SDK" />
+			</div>
+
+			<div class="launch">
+				Launch<br />
+				<span class="year">2015</span>
+			</div>
+
+			<div class="description">
+				<h1>About the Game</h1>
+
+				Travel to the world's most beautiful destinations and take breathtaking photos by solving unique puzzles.
+				Explore beautiful cities and discover exciting sites.
+
+				<h1>Game Features</h1>
+
+				<ul>
+					<li> Unique world traveling experience
+					<li> Original, innovative, fun to play puzzles
+					<li> Over 200 locations
+					<li> Over 1500 professional photos of famous sites
+					<li> Traveling and sharing with friends
+					<li> Compete and win awards or just play for fun
+				</ul>
+
+				<h1>Credits</h1>
+
+				Nino Rajacic, Game Designer<br />
+				Robert Wolffgang, Lead Developer<br />
+				Dragos Lengyel, Developer<br />
+				Alice Bessoni, Character Art<br />
+				Juan Caruso, UI Art
+			</div>
+		</div>
+
+		<div id="skyward-tale-details" class="details">
+			<div class="gallery">
+	            <ul>
+	                <li><img src="assets/skyward-tale/1.jpg" /></li>
+	                <li><img src="assets/skyward-tale/2.jpg" /></li>
+	                <li><img src="assets/skyward-tale/3.jpg" /></li>
+	                <li><img src="assets/skyward-tale/4.jpg" /></li>
+	                <li><img src="assets/skyward-tale/5.jpg" /></li>
+	            </ul>
+			</div>
+
+			<div class="logo">
+				<img src="assets/Skyward-Tale-logo.png">
+			</div>
+
+			<div class="title">
+				Skyward Tale
+			</div>
+
+			<div class="platform">
+				Platform<br />
+				<img src="assets/logos/facebook.png" width="60" alt="Facebook" />
+			</div>
+
+			<div class="frontend">
+				Frontend<br />
+				<img src="assets/logos/html-5.png" width="60" alt="HTML 5" />
+			</div>
+
+			<div class="backend">
+				Backend<br />
+				<img src="assets/logos/Panhelios-SDK.png" width="60" alt="Panhelios SDK" />
+			</div>
+
+			<div class="launch">
+				Launch<br />
+				<span class="year">2014</span>
+			</div>
+
+			<div class="description">
+				<h1>About the Game</h1>
+
+				Join Skyward and Hugo in their dream adventures and Match'n'Pop balloons to help them solve dazzling puzzles.
+				<ul>
+					<li>For the first time you can ask friends to solve a level for you!
+					<li>Just play to earn in-game currency.
+					<li>Earn stars to buy all boosters by playing the game and helping your friends!
+				</ul>
+				Or just have unforgettable Match'n'Pop fun!
+
+				<h1>Credits</h1>
+
+				Robert Wolffgang, Lead Developer<br />
+				Nino Rajacic, Game Designer<br />
+				Maria Keller, Graphics Artist<br />
+				Gryffin Frank, Voice of Skyward
+			</div>
+		</div>
+
+		<div id="cook-hero-details" class="details">
+			<div class="gallery">
+	            <ul>
+	                <li><img src="assets/cook-hero/1.jpg" /></li>
+	                <li><img src="assets/cook-hero/2.jpg" /></li>
+	                <li><img src="assets/cook-hero/3.jpg" /></li>
+	                <li><img src="assets/cook-hero/4.jpg" /></li>
+	            </ul>
+			</div>
+
+			<div class="logo">
+				<img src="assets/Cook-Hero-logo.png">
+			</div>
+
+			<div class="title">
+				Cook Hero
+			</div>
+
+			<div class="platform">
+				Platform<br />
+				<img src="assets/logos/facebook.png" width="60" alt="Facebook" />
+			</div>
+
+			<div class="frontend">
+				Frontend<br />
+				<img src="assets/logos/html-5.png" width="60" alt="HTML 5" />
+			</div>
+
+			<div class="backend">
+				Backend<br />
+				<img src="assets/logos/Panhelios-SDK.png" width="60" alt="Panhelios SDK" />
+			</div>
+
+			<div class="publisher">
+				Publisher<br />
+				<img src="assets/logos/rz.png" width="60" />
+			</div>
+
+			<div class="launch with-publisher">
+				Launch<br />
+				<span class="year">2013</span>
+			</div>
+
+			<div class="description">
+				<h1>About the Game</h1>
+
+				Cook Hero takes you to a cooking academy where you will learn the basics of matching dishes, and begin to collect your recipes.
+				<ul>
+					<li>Over 180 levels in 9 countries!
+					<li>Unlock and collect real recipes.
+					<li>Unique addition to the match-3 formula:<br /> gravity changes with each level!
+				</ul>
+
+
+				<h1>Credits</h1>
+
+				Robert Wolffgang, Lead Developer<br />
+				Nino Rajacic, Game Designer<br />
+				Maria Keller, Graphics Artist
+			</div>
+		</div>
+
+		<div id="panhelios-sdk-details" class="details">
+			<div class="gallery-static">
+				<video class="video-js" controls preload="auto" width="400" height="280"
+						poster="http://video.panhelios.de/screencast-poster.jpg" data-setup='{ "controls": true, "autoplay": false, "preload": "auto" }'>
+					<source src="http://video.panhelios.de/screencast.mp4" type='video/mp4' />
+					<source src="http://video.panhelios.de/screencast.webm" type='video/webm' />
+				</video>
+			</div>
+
+			<div class="logo">
+				<img src="assets/Panhelios-SDK-logo.png">
+			</div>
+
+			<div class="title">
+				Panhelios SDK
+			</div>
+
+			<div class="description">
+				<h1>About the SDK</h1>
+
+				The Panhelios Software Development Kit enables small teams to produce modern browser games. We used the SDK in the production of all our games.
+
+				<ul>
+					<li>Model-driven development to reduce production overhead.
+					<li>Object-relational mapping for easy access of game data.
+					<li>HelioScript translates to PHP and JavaScript code, so all code can run on the server and the client side in sync.
+					<li>Professional IDE: Eclipse
+					<li>Supports WebSocket and AJAX
+					<li>Modern HTML 5 graphics engine
+				</ul>
+			</div>
+		</div>
+
+		<div id="impressum-details" class="details">
+			<div class="gallery-static">
+				<img src="assets/impressum/logo.png">
+			</div>
+
+			<div class="title">
+				Panhelios GmbH &amp; Co. KG
+			</div>
+
+			<div class="description">
+				<h1>Impressum</h1>
+
+				<p>
+					Bahlmannstr. 2<br />
+					48147 M&uuml;nster<br />
+					<br />
+					<a href="mailto:kontakt@panhelios.de">kontakt@panhelios.de</a>
+				</p>
+
+				<p>
+					<strong>Gesch&auml;ftsf&uuml;hrer</strong><br />
+					Dipl.-Ing. (FH) Robert Wolffgang
+				</p>
+
+				<p>
+					<strong>Sitz der Gesellschaft</strong><br />
+					M&uuml;nster
+				</p>
+
+				<p>
+					<strong>Handelsregister-Nr.</strong><br />
+					Amtsgericht M&uuml;nster HRA 8943
+				</p>
+
+				<p>
+					<strong>Steuernummer</strong><br />
+					337/5720/2311 (Finanzamt M&uuml;nster-Innenstadt)
+				</p>
+
+				<p>
+					<strong>Datenschutzhinweis</strong><br />
+					Wir speichern keine personenbezogenen Informationen.
+				</p>
+
+				<p>
+					<strong>Credit for graphics used on panhelios.de</strong><br />
+					<a target="_blank" href="http://www.freepik.com/free-photos-vectors/abstract">Abstract vector created by GraphiqaStock - Freepik.com</a>
+				</p>
+
+			</div>
+		</div>
+		</div>
+
+	    <script>
+       	 $(document).ready(function() {
+			$(".gallery").unslider({
+				nav: true,
+   				dots: true,
+				autoplay: true,
+				delay: 3000
+   			});
+   		});
+	    </script>
+
+	</body>
+</html>

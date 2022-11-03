@@ -1,0 +1,489 @@
+body {
+	margin: 0;
+
+	background-color: #F2F2F2;
+}
+
+#wrapper {
+	position: relative;
+	margin: 20px auto;
+	width: 1150px;
+	height: 1239px;
+
+	background-color: #f9f9f9;
+	box-sizing: border-box;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#about {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 200px;
+	bottom: 0;
+	min-height: 960px;
+
+	color: #f9f9f9;
+	font-family: 'aleolight';
+	font-size: 14px;
+	line-height: 21px;
+
+	padding: 30px;
+	background: #353032;
+
+	z-index: 102;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#about #portrait {
+	position: relative;
+	width: 150px;
+	height: 150px;
+
+	margin: 0px auto;
+
+	border: 2px solid #989696;
+	border-radius: 150px;
+
+	background-image: url(../assets/contact/rwolffgang.jpg);
+	background-position: 0px 0px;
+	background-size: 95%;
+}
+
+#about #name {
+	position: relative;
+	width: 200px;
+	text-align: center;
+
+	margin-top: 20px;
+
+	font-family: 'exolight';
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 21px;
+}
+
+#about #position {
+	position: relative;
+	width: 200px;
+	text-align: center;
+	font-family: 'exolight';
+
+	margin-top: 5px;
+}
+
+#about #flavor {
+	position: relative;
+	width: 200px;
+	text-align: left;
+
+	margin-top: 20px;
+}
+
+#about #contact {
+	position: relative;
+	width: 200px;
+	text-align: left;
+
+	margin-top: 20px;
+}
+
+#about #contact .fa {
+	width: 25px;
+}
+
+#about #contact ul {
+	list-style: none;
+	padding: 0;
+}
+
+#about #contact li {
+	padding-bottom: 10px;
+}
+
+#about a, #about a:hover, #about a:active {
+	color: #f9f9f9;
+	text-decoration: none;
+}
+
+#about #imprint {
+	position: absolute;
+	bottom: 2px;
+	right: 10px;
+
+	font-size: 12px;
+	font-family: 'exolight';
+
+	cursor: pointer;
+}
+
+#title {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+
+	width: 840px;
+	height: 800px;
+
+    margin: auto;
+
+	text-align: center;
+	color: #464042;
+	font-family: 'exoregular';
+	font-size: 40px;
+}
+
+#timeline-container {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 240px;
+}
+
+#timeline {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+
+	width: 840px;
+	height: 1234px;
+
+    margin: auto;
+}
+
+#timeline #bar {
+	position: absolute;
+
+	top: 140px;
+	left: 415px;
+	width: 10px;
+	height: 975px;
+	background-color: #e4e0df;
+
+	border-radius: 5px;
+}
+
+#timeline #earth, #timeline #moon {
+	position: absolute;
+
+	left: 233px;
+}
+
+#timeline #moon {
+	position: absolute;
+
+	top: 0;
+	width: 372px;
+	height: 134px;
+
+	background-image: url(../assets/top.png);
+}
+
+#timeline #earth {
+	position: absolute;
+
+	top: 1125px;
+	width: 372px;
+	height: 113px;
+
+	background-image: url(../assets/bottom.png);
+}
+
+#timeline .timeline-story {
+	position: absolute;
+	width: 840px;
+	height: 170px;
+}
+
+#timeline .timeline-story:not(.text-only) {
+	cursor: pointer;
+}
+
+#timeline .timeline-story .dot {
+	position: absolute;
+	top: 55px;
+	left: 406px;
+	width: 14px;
+	height: 14px;
+
+	border: 7px solid #f9f9f9;
+	border-radius: 28px;
+}
+
+#timeline .timeline-story .logo {
+	position: absolute;
+	width: 344px;
+	height: 130px;
+}
+
+#timeline .timeline-story .logo img {
+	transform: scale(0.8, 0.8);
+}
+
+#timeline .timeline-story .logo img {
+	filter: grayscale(100%);
+}
+
+#timeline .timeline-story:not(.text-only):hover .logo img {
+	filter: grayscale(0%);
+}
+
+#timeline .timeline-story .year {
+	position: absolute;
+
+	font-family: 'exoregular';
+	font-size: 42px;
+}
+
+#timeline .timeline-story .title {
+	position: absolute;
+	top: 13px;
+	width: 300px;
+
+	font-size: 27px;
+	font-family: 'exolight';
+}
+
+#timeline .timeline-story .description {
+	position: absolute;
+	width: 330px;
+
+	color: #969190;
+	font-family: 'aleolight';
+	font-size: 14px;
+	line-height: 21px;
+}
+
+	#timeline .timeline-story .description .legacy {
+		font-style: italic;
+	}
+
+/* left */
+#timeline .left .logo {
+	right: 450px;
+
+	text-align: right;
+}
+
+#timeline .left .year {
+	top: 0px;
+	left: 470px;
+}
+
+#timeline .left .title {
+	left: 580px;
+}
+
+#timeline .left .description {
+	top: 60px;
+	left: 470px;
+}
+
+/* right */
+#timeline .right .logo {
+	left: 450px;
+
+	text-align: left;
+}
+
+#timeline .right .year {
+	top: 0px;
+	right: 470px;
+}
+
+#timeline .right .title {
+	right: 580px;
+	text-align: right;
+}
+
+#timeline .right .description {
+	top: 60px;
+	right: 470px;
+	text-align: right;
+}
+
+#landed {
+	top: 155px;
+}
+
+#skyward-tale-se {
+	top: 325px;
+}
+
+#mission-snapshot {
+	top: 495px;
+}
+
+#skyward-tale {
+	top: 665px;
+}
+
+#cook-hero {
+	top: 835px;
+}
+
+#panhelios_sdk {
+	top: 1005px;
+}
+
+.fancybox-inner {
+	overflow: hidden !important;
+}
+
+.details {
+	display: none;
+
+	margin: 20px;
+
+	color: #423d3d;
+	font-family: 'aleolight';
+	font-size: 14px;
+	line-height: 21px;
+
+	overflow: hidden;
+}
+
+.details .logo {
+    position: absolute;
+    bottom: 0;
+	right: 0;
+}
+
+.details .gallery, .details .gallery-static {
+	position: absolute;
+	top: 70px;
+	left: 0px;
+	width: 400px;
+	height: 350px;
+}
+
+.unslider-nav {
+	position: absolute;
+	top: 425px;
+	left: 0;
+
+	width: 400px;
+}
+
+.unslider-arrow {
+	position: absolute;
+	top: 440px;
+
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: -16px;
+    border-radius: 20px;
+    text-indent: -999em;
+    opacity: .6;
+    transition: opacity .2s;
+
+    background: #464042 no-repeat 50% 50%;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAQCAQAAABuQZ3IAAAAi0lEQVR4AU3OISBEQQBAwS0AACS9NxqQgCZpkiYBVddFvWhAAUABAPQCAGC4g/0vTnrBqCfDIZl70J+kMUBPpEwT4FNXxBxz4F1HxHyr4EVTxBLb4EFNxEon4CJSlVNw9AcV9sC16h8osgke1P1ArgXwouVvdQq86ww/GQefusNf7kBviBlxpT8k+gL/Wox4r1d4MwAAAABJRU5ErkJggg==');
+    background-size: 7px 11px;
+}
+
+.unslider-arrow.next {
+	left: 380px;
+}
+
+.unslider-arrow.prev {
+	left: 0px;
+	-ms-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+
+.details .title {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+
+	width: 600px;
+
+    margin: auto;
+	text-align: center;
+
+	font-family: 'exoregular';
+	font-size: 42px;
+}
+
+.details .description {
+	position: absolute;
+	top: 60px;
+	left: 420px;
+	width: 370px;
+	height: 300px;
+}
+
+.details .description h1 {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.details .platform, .details .frontend, .details .backend, .details .launch, .details .publisher, .details .legacy {
+	position: absolute;
+	bottom: 0px;
+	height: 95px;
+
+	font-size: 15px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.details .platform {
+	left: 0px;
+}
+
+.details .frontend {
+	left: 90px;
+}
+
+.details .backend {
+	left: 180px;
+}
+
+.details .publisher {
+	left: 270px;
+}
+
+.details .launch {
+	left: 270px;
+}
+
+.details .launch.with-publisher {
+	left: 360px;
+}
+
+.details .launch .year {
+	font-family: 'exoregular';
+	font-size: 25px;
+	line-height: 60px;
+}
+
+.details .legacy {
+	left: 360px;
+	text-align: left;
+}
+
+.details .legacy .button {
+	height: 40px;
+	margin: 5px;
+	padding: 5px 40px 0 40px;
+
+	font-family: 'exoregular';
+	font-size: 16px;
+	color: white;
+	line-height: 40px;
+	cursor: pointer;
+
+	border-radius: 4px;
+	box-shadow: 0px 7px 0px rgb(8, 128, 215), 0px 8px 3px rgba(0, 0, 0, 0.3);
+	background-color: rgb(27, 154, 247);
+}
+
+	.details .legacy .button:hover {
+		background-color: rgb(35, 135, 208);
+	}
