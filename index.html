@@ -1,453 +1,538 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Panhelios</title>
-
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-		<link rel="shortcut icon" href="http://www.panhelios.de/favicon.ico">
-
-		<!-- jQuery -->
-		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-
-		<!-- FancyBox -->
-        <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-        <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
-
-		<!-- unslider -->
-		<script src="js/unslider/js/unslider-min.js"></script>
-		<link rel="stylesheet" href="js/unslider/css/unslider.css">
-    	<link rel="stylesheet" href="js/unslider/css/unslider-dots.css" />
-
-		<link rel="stylesheet" href="css/main.css" />
-    	<link rel="stylesheet" href="css/font-awesome.min.css" />
-		<link rel="stylesheet" href="fonts/fonts.css" />
-
-	    <script>
-			var fancyboxOptions = {
-					maxWidth	: 800,
-					maxHeight	: 600,
-					fitToView	: false,
-					width		: '830',
-					height		: '100%',
-					autoSize	: false,
-					closeClick	: false,
-					openEffect	: 'none',
-					closeEffect	: 'none'
-				};
-	    </script>
-	</head>
-	<body>
-		<div id="wrapper">
-			<div id="about">
-				<div id="portrait"></div>
-				<div id="name">Robert Wolffgang</div>
-				<div id="position">Entrepreneur</div>
-				<div id="flavor">
-					<p>I founded Panhelios in 2010 and brought a software development kit for games onto the market in 2012.</p>
-					<p>Since then I have launched four social games in cooperation with international partners.</p>
-					<p>Until I handed over the company in 2017 over seven million players have been enjoying a game under the Panhelios flag.</p>
-				</div>
-				<div id="contact">
-					<ul>
-						<li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:robert@panhelios.de">robert@panhelios.de</a>
-
-						<li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+492515908512">+49 251 5908512</a>
-
-						<li><i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/rwolffgang">rwolffgang</a>
-					</ul>
-				</div>
-
-				<div id="imprint">
-					<div onclick="$.fancybox('#impressum-details', fancyboxOptions); return false;">Impressum</div>
-				</div>
-			</div>
-
-			<div id="timeline-container">
-				<!--<div id="title"><img src="assets/logo.png" /></div>-->
-
-				<div id="timeline">
-					<div id="bar"></div>
-					<div id="begin"></div>
-					<div id="end"></div>
-
-					<div id="moon"></div>
-					<div id="earth"></div>
-
-					<div id="landed" class="timeline-story right text-only">
-						<div class="dot" style="background-color: #464042"></div>
-						<div class="logo"><img src="assets/Panhelios-logo.png"></div>
-						<div class="year">2017</div>
-						<div class="title" style="color: #464042">A Journey's End</div>
-						<div class="description">After five adventurous years Panhelios has achieved its goal: to discover the full scope of game development - from prototyping first designs to delivering profitable games to millions of players.</div>
-					</div>
-
-					<div id="skyward-tale-se" class="timeline-story left" onclick="$.fancybox('#skyward-tale-se-details', fancyboxOptions); return false;">
-						<div class="dot" style="background-color: #ca144b"></div>
-						<div class="logo"><img src="assets/Skyward-Tale-SE-logo.png"></div>
-						<div class="year">2016</div>
-						<div class="title" style="color: #ca144b">Skyward Tale: SE</div>
-						<div class="description">Continue your adventures with Skyward and Hugo to even stranger places! This edition features a modern game engine for a more vivid experience.<br />
-						<span class="legacy">A legacy version of this game is available here.</span></div>
-					</div>
-
-					<div id="mission-snapshot" class="timeline-story right" onclick="$.fancybox('#mission-snapshot-details', fancyboxOptions); return false;">
-						<div class="dot" style="background-color: #65afcb"></div>
-						<div class="logo"><img src="assets/Mission-Snapshot-logo.png"></div>
-						<div class="year">2015</div>
-						<div class="title" style="color: #65afcb">Mission: Snapshot</div>
-						<div class="description">Travel to the most beautiful world's destinations and take breathtaking photos by solving unique puzzles.</div>
-					</div>
-
-					<div id="skyward-tale" class="timeline-story left" onclick="$.fancybox('#skyward-tale-details', fancyboxOptions); return false;">
-						<div class="dot" style="background-color: #c1260c"></div>
-						<div class="logo"><img src="assets/Skyward-Tale-logo.png"></div>
-						<div class="year">2014</div>
-						<div class="title" style="color: #c1260c">Skyward Tale</div>
-						<div class="description">Join Skyward and Hugo in their dream adventures and Match'n'Pop balloons to help them solve dazzling puzzles.</div>
-					</div>
-
-					<div id="cook-hero" class="timeline-story right" onclick="$.fancybox('#cook-hero-details', fancyboxOptions); return false;">
-						<div class="dot" style="background-color: #da9d2e"></div>
-						<div class="logo"><img src="assets/Cook-Hero-logo.png"></div>
-						<div class="year">2013</div>
-						<div class="title" style="color: #da9d2e">Cook Hero</div>
-						<div class="description">Solve puzzles to become the world's most renown chef and unlock real recipes for your collection.</div>
-					</div>
-
-					<div id="panhelios_sdk" class="timeline-story left" onclick="$.fancybox('#panhelios-sdk-details', fancyboxOptions); return false;">
-						<div class="dot" style="background-color: #464042"></div>
-						<div class="logo"><img src="assets/Panhelios-SDK-logo.png"></div>
-						<div class="year">2012</div>
-						<div class="title" style="color: #464042">Panhelios SDK</div>
-						<div class="description">With our professional Panhelios SDK developing online games became achievable for small start-ups.</div>
-					</div>
-				</div>
-			</div>
-
-		<div id="skyward-tale-se-details" class="details">
-			<div class="gallery">
-	            <ul>
-	                <li><img src="assets/skyward-tale-se/1.jpg" /></li>
-	                <li><img src="assets/skyward-tale-se/2.jpg" /></li>
-	                <li><img src="assets/skyward-tale-se/3.jpg" /></li>
-	                <li><img src="assets/skyward-tale-se/4.jpg" /></li>
-	                <li><img src="assets/skyward-tale-se/5.jpg" /></li>
-	            </ul>
-			</div>
-
-			<div class="logo">
-				<img src="assets/Skyward-Tale-SE-logo.png">
-			</div>
-
-			<div class="title">
-				Skyward Tale: Second Edition
-			</div>
-
-			<div class="platform">
-				Platform<br />
-				<img src="assets/logos/facebook.png" width="60" alt="Facebook" />
-			</div>
-
-			<div class="frontend">
-				Frontend<br />
-				<img src="assets/logos/adobe-air.jpg" width="60" alt="Adobe Air &amp; Flash" />
-			</div>
-
-			<div class="backend">
-				Backend<br />
-				<img src="assets/logos/Panhelios-SDK.png" width="60" alt="Panhelios SDK" />
-			</div>
-
-			<div class="launch">
-				Launch<br />
-				<span class="year">2016</span>
-			</div>
-
-			<div class="description">
-				<h1>About the Game</h1>
-
-				Skyward's adventure continues in Skyward Tale: Second Edition. Our hero travels to even stranger places, always in company with his trusty friend Hugo.
-
-				<ul>
-					<li>Over 300 hand-crafted levels!
-					<li>Play with your friends and ask them to solve a level for you.
-					<li>Earn stars by solving levels or helping your friends and get yourself some powerful boosters!
-				</ul>
-
-				Or simply have unforgettable Match'n'Pop fun!
-
-				<h1>Credits</h1>
-
-				Robert Wolffgang, Lead Developer<br />
-				Nino Rajacic, Game Designer<br />
-				Maria Keller, Graphics Artist<br />
-				Dragos Lengyel, Developer<br />
-				Gryffin Frank, Voice of Skyward
-			</div>
-		</div>
-
-		<div id="mission-snapshot-details" class="details">
-			<div class="gallery">
-	            <ul>
-	                <li><img src="assets/mission-snapshot/1.jpg" /></li>
-	                <li><img src="assets/mission-snapshot/2.jpg" /></li>
-	                <li><img src="assets/mission-snapshot/3.jpg" /></li>
-	                <li><img src="assets/mission-snapshot/4.jpg" /></li>
-	                <li><img src="assets/mission-snapshot/5.jpg" /></li>
-	            </ul>
-			</div>
-
-			<div class="logo">
-				<img src="assets/Mission-Snapshot-logo.png">
-			</div>
-
-			<div class="title">
-				Mission: Snapshot
-			</div>
-
-			<div class="platform">
-				Platform<br />
-				<img src="assets/logos/facebook.png" width="60" alt="Facebook" />
-			</div>
-
-			<div class="frontend">
-				Frontend<br />
-				<img src="assets/logos/adobe-air.jpg" width="60" alt="Adobe Air &amp; Flash" />
-			</div>
-
-			<div class="backend">
-				Backend<br />
-				<img src="assets/logos/Panhelios-SDK.png" width="60" alt="Panhelios SDK" />
-			</div>
-
-			<div class="launch">
-				Launch<br />
-				<span class="year">2015</span>
-			</div>
-
-			<div class="description">
-				<h1>About the Game</h1>
-
-				Travel to the world's most beautiful destinations and take breathtaking photos by solving unique puzzles.
-				Explore beautiful cities and discover exciting sites.
-
-				<h1>Game Features</h1>
-
-				<ul>
-					<li> Unique world traveling experience
-					<li> Original, innovative, fun to play puzzles
-					<li> Over 200 locations
-					<li> Over 1500 professional photos of famous sites
-					<li> Traveling and sharing with friends
-					<li> Compete and win awards or just play for fun
-				</ul>
-
-				<h1>Credits</h1>
-
-				Nino Rajacic, Game Designer<br />
-				Robert Wolffgang, Lead Developer<br />
-				Dragos Lengyel, Developer<br />
-				Alice Bessoni, Character Art<br />
-				Juan Caruso, UI Art
-			</div>
-		</div>
-
-		<div id="skyward-tale-details" class="details">
-			<div class="gallery">
-	            <ul>
-	                <li><img src="assets/skyward-tale/1.jpg" /></li>
-	                <li><img src="assets/skyward-tale/2.jpg" /></li>
-	                <li><img src="assets/skyward-tale/3.jpg" /></li>
-	                <li><img src="assets/skyward-tale/4.jpg" /></li>
-	                <li><img src="assets/skyward-tale/5.jpg" /></li>
-	            </ul>
-			</div>
-
-			<div class="logo">
-				<img src="assets/Skyward-Tale-logo.png">
-			</div>
-
-			<div class="title">
-				Skyward Tale
-			</div>
-
-			<div class="platform">
-				Platform<br />
-				<img src="assets/logos/facebook.png" width="60" alt="Facebook" />
-			</div>
-
-			<div class="frontend">
-				Frontend<br />
-				<img src="assets/logos/html-5.png" width="60" alt="HTML 5" />
-			</div>
-
-			<div class="backend">
-				Backend<br />
-				<img src="assets/logos/Panhelios-SDK.png" width="60" alt="Panhelios SDK" />
-			</div>
-
-			<div class="launch">
-				Launch<br />
-				<span class="year">2014</span>
-			</div>
-
-			<div class="description">
-				<h1>About the Game</h1>
-
-				Join Skyward and Hugo in their dream adventures and Match'n'Pop balloons to help them solve dazzling puzzles.
-				<ul>
-					<li>For the first time you can ask friends to solve a level for you!
-					<li>Just play to earn in-game currency.
-					<li>Earn stars to buy all boosters by playing the game and helping your friends!
-				</ul>
-				Or just have unforgettable Match'n'Pop fun!
-
-				<h1>Credits</h1>
-
-				Robert Wolffgang, Lead Developer<br />
-				Nino Rajacic, Game Designer<br />
-				Maria Keller, Graphics Artist<br />
-				Gryffin Frank, Voice of Skyward
-			</div>
-		</div>
-
-		<div id="cook-hero-details" class="details">
-			<div class="gallery">
-	            <ul>
-	                <li><img src="assets/cook-hero/1.jpg" /></li>
-	                <li><img src="assets/cook-hero/2.jpg" /></li>
-	                <li><img src="assets/cook-hero/3.jpg" /></li>
-	                <li><img src="assets/cook-hero/4.jpg" /></li>
-	            </ul>
-			</div>
-
-			<div class="logo">
-				<img src="assets/Cook-Hero-logo.png">
-			</div>
-
-			<div class="title">
-				Cook Hero
-			</div>
-
-			<div class="platform">
-				Platform<br />
-				<img src="assets/logos/facebook.png" width="60" alt="Facebook" />
-			</div>
-
-			<div class="frontend">
-				Frontend<br />
-				<img src="assets/logos/html-5.png" width="60" alt="HTML 5" />
-			</div>
-
-			<div class="backend">
-				Backend<br />
-				<img src="assets/logos/Panhelios-SDK.png" width="60" alt="Panhelios SDK" />
-			</div>
-
-			<div class="publisher">
-				Publisher<br />
-				<img src="assets/logos/rz.png" width="60" />
-			</div>
-
-			<div class="launch with-publisher">
-				Launch<br />
-				<span class="year">2013</span>
-			</div>
-
-			<div class="description">
-				<h1>About the Game</h1>
-
-				Cook Hero takes you to a cooking academy where you will learn the basics of matching dishes, and begin to collect your recipes.
-				<ul>
-					<li>Over 180 levels in 9 countries!
-					<li>Unlock and collect real recipes.
-					<li>Unique addition to the match-3 formula:<br /> gravity changes with each level!
-				</ul>
-
-
-				<h1>Credits</h1>
-
-				Robert Wolffgang, Lead Developer<br />
-				Nino Rajacic, Game Designer<br />
-				Maria Keller, Graphics Artist
-			</div>
-		</div>
-
-		<div id="panhelios-sdk-details" class="details">
-			<div class="gallery-static">
-				<video class="video-js" controls preload="auto" width="400" height="280"
-						poster="http://video.panhelios.de/screencast-poster.jpg" data-setup='{ "controls": true, "autoplay": false, "preload": "auto" }'>
-					<source src="http://video.panhelios.de/screencast.mp4" type='video/mp4' />
-					<source src="http://video.panhelios.de/screencast.webm" type='video/webm' />
-				</video>
-			</div>
-
-			<div class="logo">
-				<img src="assets/Panhelios-SDK-logo.png">
-			</div>
-
-			<div class="title">
-				Panhelios SDK
-			</div>
-
-			<div class="description">
-				<h1>About the SDK</h1>
-
-				The Panhelios Software Development Kit enables small teams to produce modern browser games. We used the SDK in the production of all our games.
-
-				<ul>
-					<li>Model-driven development to reduce production overhead.
-					<li>Object-relational mapping for easy access of game data.
-					<li>HelioScript translates to PHP and JavaScript code, so all code can run on the server and the client side in sync.
-					<li>Professional IDE: Eclipse
-					<li>Supports WebSocket and AJAX
-					<li>Modern HTML 5 graphics engine
-				</ul>
-			</div>
-		</div>
-
-		<div id="impressum-details" class="details">
-			<div class="gallery-static">
-				<img src="assets/impressum/logo.png">
-			</div>
-
-			<div class="description">
-				<h1>Impressum</h1>
-
-				<p>
-					Robert Wolffgang<br />
-					Heerdestr. 16<br />
-					48149 M&uuml;nster<br />
-					<br />
-					<a href="mailto:kontakt@panhelios.de">kontakt@panhelios.de</a>
-				</p>
-
-				<p>
-					<strong>Datenschutzhinweis</strong><br />
-					Wir speichern keine personenbezogenen Informationen.
-				</p>
-
-				<p>
-					<strong>Credit for graphics used on panhelios.de</strong><br />
-					<a target="_blank" href="http://www.freepik.com/free-photos-vectors/abstract">Abstract vector created by GraphiqaStock - Freepik.com</a>
-				</p>
-
-			</div>
-		</div>
-		</div>
-
-	    <script>
-       	 $(document).ready(function() {
-			$(".gallery").unslider({
-				nav: true,
-   				dots: true,
-				autoplay: true,
-				delay: 3000
-   			});
-   		});
-	    </script>
-
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Robert Wolffgang - Freelance Software Developer specializing in JavaScript, TypeScript, AI Agents and International Remote Development">
+    <title>Robert Wolffgang - Freelance Software Developer</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #3b82f6;
+            --dark-bg: #0f172a;
+            --light-bg: #f8fafc;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --card-bg: #ffffff;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--light-bg);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header / Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--dark-bg) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 80px 0 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+            opacity: 0.5;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .hero-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.2);
+            box-shadow: var(--shadow-lg);
+            background-image: url('assets/contact/rwolffgang.jpg');
+            background-size: cover;
+            background-position: center;
+            flex-shrink: 0;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 20px;
+        }
+
+        .hero .tagline {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 600px;
+            line-height: 1.7;
+        }
+
+        .cta-buttons {
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--primary-color);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .skill-card {
+            background: var(--card-bg);
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .skill-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .skill-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        .skill-card p {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+
+        .tag {
+            background: var(--light-bg);
+            color: var(--primary-color);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* Experience Section */
+        .experience-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .highlight-box {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .highlight-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .highlight-label {
+            font-size: 1.1rem;
+            color: var(--text-light);
+        }
+
+        /* Game Development Section */
+        .game-dev-section {
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+        }
+
+        .game-dev-card {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .game-dev-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+        }
+
+        .game-dev-card p {
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: var(--dark-bg);
+            color: white;
+        }
+
+        .contact-section .section-header h2,
+        .contact-section .section-header p {
+            color: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-3px);
+        }
+
+        .contact-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .contact-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-card a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-card a:hover {
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background: #020617;
+            color: rgba(255, 255, 255, 0.7);
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 30px;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image"></div>
+                <div class="hero-text">
+                    <h1>Robert Wolffgang</h1>
+                    <p class="subtitle">Freelance Software Developer</p>
+                    <p class="tagline">
+                        Specialized in JavaScript, TypeScript, and AI Agent development. 
+                        15+ years of international remote collaboration with teams across 20+ countries.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#skills" class="btn btn-secondary">View Skills</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Core Expertise</h2>
+                <p>Delivering high-quality software solutions with modern technologies and best practices</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <h3>JavaScript & TypeScript</h3>
+                    <p>Expert in modern JavaScript and TypeScript development with associated frameworks and tools for building robust, scalable applications.</p>
+                    <div class="skill-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">React</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🤖</div>
+                    <h3>AI Agents</h3>
+                    <p>Implementing and working with AI agents, including integration, deployment, and optimization of intelligent automation systems.</p>
+                    <div class="skill-tags">
+                        <span class="tag">AI Integration</span>
+                        <span class="tag">Automation</span>
+                        <span class="tag">LLM APIs</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🌍</div>
+                    <h3>International Remote Work</h3>
+                    <p>Over 15 years of experience working remotely with international teams. Collaborated with professionals from 20+ countries, adept at handling cultural differences.</p>
+                    <div class="skill-tags">
+                        <span class="tag">Remote Work</span>
+                        <span class="tag">Cross-Cultural</span>
+                        <span class="tag">Distributed Teams</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2>Experience Highlights</h2>
+                <p>Proven track record of delivering results in diverse, international environments</p>
+            </div>
+            <div class="experience-highlights">
+                <div class="highlight-box">
+                    <span class="highlight-number">15+</span>
+                    <span class="highlight-label">Years Remote Work</span>
+                </div>
+                <div class="highlight-box">
+                    <span class="highlight-number">20+</span>
+                    <span class="highlight-label">Countries Collaborated</span>
+                </div>
+                <div class="highlight-box">
+                    <span class="highlight-number">7M+</span>
+                    <span class="highlight-label">Users Reached</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Development Section -->
+    <section class="game-dev-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Game Development Background</h2>
+                <p>Building the foundation through game development until 2016</p>
+            </div>
+            <div class="game-dev-card">
+                <h3>Panhelios - Game Development Journey</h3>
+                <p>
+                    Until 2016, I focused on game development, founding Panhelios in 2010 and bringing a 
+                    software development kit for games to market in 2012. During this time, I launched four 
+                    social games in cooperation with international partners, reaching over seven million players.
+                </p>
+                <p>
+                    This experience provided deep expertise in full-stack development, real-time systems, 
+                    user engagement, and working with distributed teams across multiple time zones.
+                </p>
+                <a href="panhelios/" class="btn btn-primary">View Game Development Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Let's Work Together</h2>
+                <p>Available for freelance projects and consulting opportunities</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <span class="contact-icon">✉️</span>
+                    <h3>Email</h3>
+                    <a href="mailto:robert@panhelios.de">robert@panhelios.de</a>
+                </div>
+                <div class="contact-card">
+                    <span class="contact-icon">📞</span>
+                    <h3>Phone</h3>
+                    <a href="tel:+492515908512">+49 251 5908512</a>
+                </div>
+                <div class="contact-card">
+                    <span class="contact-icon">💻</span>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/rwolffgang" target="_blank">@rwolffgang</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Robert Wolffgang. Based in Germany. Available for remote work worldwide.</p>
+            <p style="margin-top: 10px;">
+                <a href="panhelios/">Game Development Portfolio</a>
+            </p>
+        </div>
+    </footer>
+</body>
 </html>
