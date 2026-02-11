@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Robert Wolffgang - Freelance Software Developer specializing in JavaScript, TypeScript, AI Agents and International Remote Development">
-    <title>Robert Wolffgang - Freelance Software Developer</title>
+    <meta name="description" content="Robert Wolffgang - Freelance Web Developer specializing in JavaScript, TypeScript, MCP Development, AI Agents and International Remote Development">
+    <title>Robert Wolffgang - Freelance Web Developer</title>
     <link rel="shortcut icon" href="favicon.ico">
     <style>
         * {
@@ -14,9 +14,9 @@
         }
 
         :root {
-            --primary-color: #2563eb;
-            --secondary-color: #1e40af;
-            --accent-color: #3b82f6;
+            --primary-color: #3b82f6;
+            --secondary-color: #2563eb;
+            --accent-color: #60a5fa;
             --dark-bg: #0f172a;
             --light-bg: #f8fafc;
             --text-dark: #1e293b;
@@ -24,6 +24,7 @@
             --card-bg: #ffffff;
             --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --game-dev-color: #8b5cf6;
         }
 
         body {
@@ -41,7 +42,7 @@
 
         /* Header / Hero Section */
         .hero {
-            background: linear-gradient(135deg, var(--dark-bg) 0%, var(--secondary-color) 100%);
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #3b82f6 100%);
             color: white;
             padding: 80px 0 60px;
             position: relative;
@@ -57,6 +58,29 @@
             bottom: 0;
             background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
             opacity: 0.5;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.3) 0%, transparent 70%);
+            border-radius: 50%;
+            top: -200px;
+            right: -100px;
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 0.3;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.5;
+            }
         }
 
         .hero-content {
@@ -75,8 +99,9 @@
             border: 5px solid rgba(255, 255, 255, 0.2);
             box-shadow: var(--shadow-lg);
             background-image: url('assets/contact/rwolffgang.jpg');
-            background-size: cover;
-            background-position: center;
+            background-size: 95%;
+            background-position: 0px 0px;
+            background-repeat: no-repeat;
             flex-shrink: 0;
         }
 
@@ -182,11 +207,30 @@
             box-shadow: var(--shadow);
             transition: all 0.3s ease;
             border-top: 4px solid var(--primary-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, transparent 0%, rgba(59, 130, 246, 0.05) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .skill-card:hover::before {
+            opacity: 1;
         }
 
         .skill-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-8px);
             box-shadow: var(--shadow-lg);
+            border-top-color: var(--accent-color);
         }
 
         .skill-icon {
@@ -259,28 +303,78 @@
 
         /* Game Development Section */
         .game-dev-section {
-            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+            position: relative;
+        }
+
+        .game-dev-section::before {
+            content: '🎮';
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            font-size: 8rem;
+            opacity: 0.1;
+            z-index: 0;
         }
 
         .game-dev-card {
             background: var(--card-bg);
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: var(--shadow);
-            max-width: 800px;
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            max-width: 900px;
             margin: 0 auto;
+            border-left: 6px solid var(--game-dev-color);
+            position: relative;
+            z-index: 1;
         }
 
         .game-dev-card h3 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            color: var(--text-dark);
+            font-size: 2rem;
+            margin-bottom: 25px;
+            color: var(--game-dev-color);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .game-dev-card h3::before {
+            content: '🎮';
+            font-size: 2.5rem;
         }
 
         .game-dev-card p {
             color: var(--text-light);
             line-height: 1.8;
             margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        .game-dev-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+            padding: 20px;
+            background: var(--light-bg);
+            border-radius: 12px;
+        }
+
+        .game-stat {
+            text-align: center;
+        }
+
+        .game-stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--game-dev-color);
+            display: block;
+        }
+
+        .game-stat-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: 5px;
         }
 
         /* Contact Section */
@@ -394,9 +488,9 @@
                 <div class="hero-image"></div>
                 <div class="hero-text">
                     <h1>Robert Wolffgang</h1>
-                    <p class="subtitle">Freelance Software Developer</p>
+                    <p class="subtitle">Freelance Web Developer</p>
                     <p class="tagline">
-                        Specialized in JavaScript, TypeScript, and AI Agent development. 
+                        Specialized in modern web development with JavaScript, TypeScript, AI agents, and MCP development. 
                         15+ years of international remote collaboration with teams across 20+ countries.
                     </p>
                     <div class="cta-buttons">
@@ -417,21 +511,23 @@
             </div>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <div class="skill-icon">⚡</div>
-                    <h3>JavaScript & TypeScript</h3>
-                    <p>Expert in modern JavaScript and TypeScript development with associated frameworks and tools for building robust, scalable applications.</p>
+                    <div class="skill-icon">🌐</div>
+                    <h3>Web Development</h3>
+                    <p>Expert in full-stack web development with JavaScript and TypeScript. Building modern, scalable web applications with cutting-edge frameworks and tools for exceptional user experiences.</p>
                     <div class="skill-tags">
                         <span class="tag">JavaScript</span>
                         <span class="tag">TypeScript</span>
                         <span class="tag">Node.js</span>
                         <span class="tag">React</span>
+                        <span class="tag">Full-Stack</span>
                     </div>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">🤖</div>
-                    <h3>AI Agents</h3>
-                    <p>Implementing and working with AI agents, including integration, deployment, and optimization of intelligent automation systems.</p>
+                    <h3>AI Agents & MCP Development</h3>
+                    <p>Implementing and working with AI agents and MCP (Model Context Protocol) development. Expertise in integration, deployment, and optimization of intelligent automation systems.</p>
                     <div class="skill-tags">
+                        <span class="tag">MCP Development</span>
                         <span class="tag">AI Integration</span>
                         <span class="tag">Automation</span>
                         <span class="tag">LLM APIs</span>
@@ -480,10 +576,24 @@
         <div class="container">
             <div class="section-header">
                 <h2>Game Development Background</h2>
-                <p>Building the foundation through game development (2010-2016)</p>
+                <p>A successful journey building games that reached millions worldwide (2010-2017)</p>
             </div>
             <div class="game-dev-card">
                 <h3>Panhelios - Game Development Journey</h3>
+                <div class="game-dev-highlights">
+                    <div class="game-stat">
+                        <span class="game-stat-number">7M+</span>
+                        <span class="game-stat-label">Players Reached</span>
+                    </div>
+                    <div class="game-stat">
+                        <span class="game-stat-number">4</span>
+                        <span class="game-stat-label">Games Launched</span>
+                    </div>
+                    <div class="game-stat">
+                        <span class="game-stat-number">7</span>
+                        <span class="game-stat-label">Years Active</span>
+                    </div>
+                </div>
                 <p>
                     From 2010 to 2016, I focused on game development, founding Panhelios in 2010 and bringing a 
                     software development kit for games to market in 2012. During this time, I launched four 
