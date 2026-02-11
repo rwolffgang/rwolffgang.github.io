@@ -42,7 +42,7 @@
 
         /* Header / Hero Section */
         .hero {
-            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #3b82f6 100%);
+            background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
             color: white;
             padding: 80px 0 60px;
             position: relative;
@@ -308,12 +308,17 @@
         }
 
         .game-dev-section::before {
-            content: '🎮';
+            content: '';
             position: absolute;
             top: 30px;
             right: 30px;
-            font-size: 8rem;
-            opacity: 0.1;
+            width: 150px;
+            height: 150px;
+            background-image: url('assets/Panhelios-logo.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.15;
             z-index: 0;
         }
 
@@ -339,8 +344,13 @@
         }
 
         .game-dev-card h3::before {
-            content: '🎮';
-            font-size: 2.5rem;
+            content: '';
+            width: 40px;
+            height: 40px;
+            background-image: url('assets/Panhelios-logo.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         .game-dev-card p {
@@ -576,7 +586,7 @@
         <div class="container">
             <div class="section-header">
                 <h2>Game Development Background</h2>
-                <p>A successful journey building games that reached millions worldwide (2010-2017)</p>
+                <p>A successful journey building games that reached millions worldwide (2010-2016)</p>
             </div>
             <div class="game-dev-card">
                 <h3>Panhelios - Game Development Journey</h3>
@@ -590,7 +600,7 @@
                         <span class="game-stat-label">Games Launched</span>
                     </div>
                     <div class="game-stat">
-                        <span class="game-stat-number">7</span>
+                        <span class="game-stat-number">6</span>
                         <span class="game-stat-label">Years Active</span>
                     </div>
                 </div>
@@ -598,7 +608,7 @@
                     Founded Panhelios in 2010 and focused on game development until 2016, bringing a 
                     software development kit for games to market in 2012. During this time, I launched four 
                     social games in cooperation with international partners, reaching over seven million players 
-                    before handing over the company in 2017.
+                    before handing over the company in 2016.
                 </p>
                 <p>
                     This experience provided deep expertise in full-stack development, real-time systems, 
@@ -639,11 +649,15 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Robert Wolffgang. Based in Germany. Available for remote work worldwide.</p>
+            <p>&copy; <span id="copyright-year"></span> Robert Wolffgang. Based in Germany. Available for remote work worldwide.</p>
             <p style="margin-top: 10px;">
                 <a href="panhelios/">Game Development Portfolio</a>
             </p>
         </div>
     </footer>
+    <script>
+        // Automatically update copyright year
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
