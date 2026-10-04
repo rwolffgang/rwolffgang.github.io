@@ -97,6 +97,10 @@ body {
 	overflow-x: clip;
 }
 
+/* iOS Safari ignores overflow clipping on body, so clip here as well (e.g. the
+   spinning orbit rings briefly reach past the screen edge); clip keeps sticky working */
+main { overflow-x: clip; }
+
 img, svg { display: block; max-width: 100%; }
 
 body::before {
